@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3682528174.index
+\BioloshkiKatalogWEB\src\main\java
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3615727171.index
+\PV7WEB\src\main\java
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3911980009.index
+\PV7WEB\src\main\java
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1419352601.index
+\TV8WEB\src\main\java
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4241132285.index
+\BioloshkiKatalogWEB\src\main\java
+C:\Users\Administrator\eclipse-workspace\RIS2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3373461704.index
+\TV8WEB\src\main\java

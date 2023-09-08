@@ -1,0 +1,82 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Životinje - Ažuriranje</title>
+</head>
+<body>
+	<c:if test="${empty poruka }">
+	Ažuriranje:
+	<form action="/BioloshkiKatalog/zhivuljke/AzhurirajInformacie2?idZhivuljka=${zhivuljka.idZhivuljka }" method="post">
+		<table>
+			<tr>
+				<td>Trenutni tip:</td>
+				<td>${zhivuljka.tip }</td>
+				<td>Novi tip:</td>
+				<td>
+					<select name="tip">
+						<option value="sisar">sisar</option>
+  						<option value="ptica">ptica</option>
+  						<option value="riba">riba</option>
+  						<option value="reptil">reptil</option>
+  						<option value="vodozemac">vodozemac</option>
+  						<option value="arahnida">arahnida</option>
+  						<option value="insekt">insekt</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Trenutni domaći naziv:</td>
+				<td>${zhivuljka.imeNashinski }</td>
+				<td>Novi domaći naziv:</td>
+				<td><input type="text" name="imeNashinski" placeholder="${zhivuljka.imeNashinski }"></td>
+			</tr>
+			<tr>
+				<td>Trenutni latinski naziv:</td>
+				<td>${zhivuljka.imeLatinski }</td>
+				<td>Novi latinski naziv:</td>
+				<td><input type="text" name="imeLatinski" placeholder="${zhivuljka.imeLatinski }"></td>
+			</tr>
+			<tr>
+				<td>Trenutni opis:</td>
+				<td>${zhivuljka.deskripcija }</td>
+				<td>Novi opis:</td>
+				<td><input type="text" name="deskripcija" placeholder="${zhivuljka.deskripcija }"></td>
+			</tr>
+			<tr>
+				<td>Trenutna fotografija:</td>
+				<td>Link: ${zhivuljka.slimka }</td>
+				<td>
+					<a target="_blank" href="${zhivuljka.slimka }">
+							<img src="${zhivuljka.slimka }" width="100" height="100" style="border:5px solid black"/>
+					</a>
+				</td>
+				<td>Nova fotografija:</td>
+				<td><input type="text" name="slimka" placeholder="${zhivuljka.slimka }"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Ažuriraj"></td>
+			</tr>
+		</table>
+	</form>
+	<br/>
+	<form action="/BioloshkiKatalog/zhivuljke/IzbrishiZhivuljku?idZhivuljka=${zhivuljka.idZhivuljka }" method="post">
+		<table>
+			<tr>
+				<td>Izbriši ovu životinju iz kataloga: </td>
+				<td><input type="submit" value="Izbriši"/></td>
+			</tr>
+		</table>
+	</form>
+	</c:if>
+	
+	<c:if test="${!empty poruka}">
+		${poruka }
+	</c:if>
+	<br/>
+	<br/><a href="/BioloshkiKatalog/ZhivuljkePoglednjuvanje.jsp">Vrati se nazad</a>
+</body>
+</html>
